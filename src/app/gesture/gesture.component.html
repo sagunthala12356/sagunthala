@@ -1,0 +1,86 @@
+<div class="container-fluid" style="padding-top: 50px;">
+    <div class="row">
+        <div class="col-xl-4 col-sm-12" *ngFor="let doc of slideData;let i=index">
+                <div class="card">
+                    <div class="d-flex backcolor cursor" (click)="back()">
+                        <i class="fa fa-arrow-left ms-4 mt-4 cursor" aria-hidden="true"></i>
+                       <div class=" ms-3 mt-4">Daily Recommendation</div> 
+                    </div>
+        <div class="card-header text-center cardbackcolor">      
+        </div>
+        <div class="card-body">
+            <div class="container-fluid" style="padding-top: 50px;">
+                <div class="row margintop">
+                    <div class="">
+                        <div class="card  h-100" >
+                            <div class="card-header text-center " >
+                        <img [src]="doc?.img"
+                        class="imgwidth">
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-xl-6 col-sm-12">
+                                        <div class="d-flex">
+                                            <i class="fa fa-check tick"></i>
+                                            <div class="txtcolor">verified</div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="col-xl-6 col-sm-12">
+                                        <div class="d-flex">
+                                            <i class="fa fa-check tick"></i>                                       
+                                            <div class="txtcolor"> Premium</div>
+                                    </div>
+                                </div>
+                                <h5>{{doc?.name}}</h5>
+                                <div class="pt-1 pb-2">{{doc?.address}}</div>
+                                <div class="row">
+                                    <div class="col-xl-3 col-sm-12">
+                                        <div class="d-flex">
+                                            <i class="fa fa-star-o mt-1"></i>
+                                            <div>Shortlist</div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="col-xl-9 col-sm-12">
+                                        <div class="d-flex">
+                                            <div>Like her?</div>
+                                            <i class="fa fa-close tick2 ms-2 cursor" (click)="getRemove(doc?.id,i)"></i>
+                                            <i class="fa fa-check tick1 ms-2 cursor" (click)="getRemove(doc?.id,i)"></i>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <!-- <div class="row">
+                                    <div class="col">
+                                        <div class="card" style="max-width: 18rem;">
+                                            <img class="card-img-top" src="admin/files/Images/pagenotfound.png" alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Card title</h5>
+                                                <button class="btn btn-info justify-content-start">View </button>
+                                                <button class="btn btn-info align-items-end">View </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card" style="max-width: 18rem;">
+                                            <img class="card-img-top" src="admin/files/Images/pagenotfound.png" alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Library Management System</h5>
+                                                <p class="card-text">Date added: <span>May 23, 2021</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+
+</div>

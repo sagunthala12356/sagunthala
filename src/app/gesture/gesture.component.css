@@ -1,0 +1,63 @@
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+body {
+    background-color: #003366;
+}
+.margintop{
+    margin-top: -200px;
+}
+.cardbackcolor{
+    background: #5061d978;
+    padding: 112px;
+}
+.backcolor{
+    background: #5061d978;
+}
+.imgwidth{
+    width: 100%;
+    height: 200px;
+}
+.txtcolor{
+    color:skyblue;
+}
+.tick{
+    border: 1px solid skyblue;
+    border-radius: 50px;
+    font-size: 15px;
+    margin-top: 5px;
+    color: skyblue;
+}
+.tick1{
+    border: 1px solid orange;
+    border-radius: 50px;
+    font-size: 15px;
+    margin-top: 5px;
+background: orange;
+color: white;
+width: 48px;
+text-align: center;
+}
+.tick2{
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 15px;
+    margin-top: 5px;
+    color:#ccc;
+    width: 48px;
+text-align: center;
+}
+.cursor{
+    cursor:pointer
+}
